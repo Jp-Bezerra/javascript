@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Em qual país você nasceu?</p>
+    <input type="text" name="loc" id="loc">
+    <input type="button" value="enviar" onclick="separar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function separar(){
+            var local = window.document.getElementById('loc').value
+            var res = window.document.getElementById('res')
+            if(local == "Brasil"){
+                res.innerHTML = 'Você é brasileiro!'
+            } else{
+                res.innerHTML = 'Você é estrangeiro!'
+            }
+        }
+    </script>
+</body>
+</html>
